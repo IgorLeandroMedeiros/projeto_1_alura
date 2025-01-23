@@ -2,20 +2,20 @@ body {
   background-color: black;
 }
 h1 {
-  color: white;
+  color: #f6f6f6;
   font-family: "Krona One", sans-serif;
 }
 #destaque-blue {
   color: #22d4fd;
 }
 p {
-  color: white;
+  color: #f6f6f6;
   font-family: "Montserrat", sans-serif;
 }
 
 button {
   background-color: #22d4fd;
-  color: white;
+  color: #f6f6f6;
   border: none;
   padding: 5px;
   border-radius: 5px;
