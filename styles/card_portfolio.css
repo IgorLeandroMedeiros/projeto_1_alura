@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -12,4 +15,27 @@ body {
 
 .destaque-blue {
   color: #22d4fd;
+  font-weight: bold;
+}
+
+.container {
+  margin: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.container__conteudo {
+  width: 615px;
+}
+
+.container__conteudo__titulo {
+  font-size: 36px;
+  font-family: "krona one", sans-serif;
+}
+
+.container__conteudo__texto {
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
 }
