@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-  margin: 10%;
+  margin: 10% 15%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -28,6 +28,9 @@ body {
 
 .container__conteudo {
   width: 615px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .container__conteudo__titulo {
@@ -38,4 +41,26 @@ body {
 .container__conteudo__texto {
   font-size: 24px;
   font-family: "Montserrat", sans-serif;
+}
+
+.container__conteudo__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container__conteudo__links__link {
+  background-color: #22d4fd;
+  text-align: center;
+  border-radius: 16px;
+  font-size: 24px;
+  padding: 14px 80px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container__conteudo__links__link:hover {
+  opacity: 0.8;
 }
