@@ -4,11 +4,24 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
-
+.cabecalho {
+  padding: 2% 0 0 15%;
+}
+.cabecalho__menu {
+  display: flex;
+  gap: 80px;
+}
+.cabecalho__menu__link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #22d4fd;
+  text-decoration: none;
+}
 body {
-  height: 100vh;
+  box-sizing: border-box;
+  /* height: 100vh; */
   background-color: black;
   color: #f6f6f6;
 }
@@ -19,9 +32,11 @@ body {
 }
 
 .container {
-  margin: 10% 15%;
+  /* margin: 10% 15%; */
+  padding: 4% 15%;
+  flex: 1;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   flex-direction: row;
 }
@@ -45,22 +60,59 @@ body {
 
 .container__conteudo__links {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+.conteudo_subtitulo {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Krona One", sans-serif;
 }
 
 .container__conteudo__links__link {
-  background-color: #22d4fd;
+  display: flex;
+  border: 2px solid #22d4fd;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  border-radius: 16px;
+  border-radius: 8px;
   font-size: 24px;
-  padding: 14px 80px;
+  padding: 21.5px 0px;
   text-decoration: none;
-  color: #000;
+  color: #f6f6f6;
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
+  width: 378px;
+  gap: 16px;
+  transition: background-color 0.15s ease, box-shadow 0.15s ease,
+    inline-size 0.15s ease;
 }
 
 .container__conteudo__links__link:hover {
-  opacity: 0.8;
+  background-color: #272727;
+  border: 2px solid rgba(153, 250, 250, 0.897);
+  box-shadow: 2px 2px 2px rgba(153, 250, 250, 0.562);
+  inline-size: 320px;
+}
+
+footer {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  background-color: #22d4fd;
+  padding: 24px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+
+footer a:hover {
+  color: black;
+  cursor: pointer;
 }

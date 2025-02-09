@@ -4,10 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/card_portfolio.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Card</title>
   </head>
   <body>
-    <header></header>
+    <header class="cabecalho">
+      <nav class="cabecalho__menu">
+        <a href="#" class="cabecalho__menu__link">Home</a>
+        <a href="#" class="cabecalho__menu__link">Sobre Mim</a>
+      </nav>
+    </header>
     <main class="container">
       <section class="container__conteudo">
         <h1 class="container__conteudo__titulo">
@@ -21,13 +33,18 @@
           conversar?
         </p>
         <div class="container__conteudo__links">
-          <a
-            class="container__conteudo__links__link"
-            href="https://instagram.com"
-            >Instagram</a
+          <h2 class="conteudo_subtitulo">Acesse minhas redes</h2>
+          <a href="#" class="container__conteudo__links__link">
+            <img src="../assets/instagram.png" alt="" />
+            Instagram</a
           >
-          <a class="container__conteudo__links__link" href="https://github.com"
-            >Github</a
+          <a href="#" class="container__conteudo__links__link">
+            <img src="../assets/linkedin.png" alt="" />
+            LinkedIn</a
+          >
+          <a href="#" class="container__conteudo__links__link">
+            <img src="../assets/github.png" alt="" />
+            Github</a
           >
         </div>
       </section>
@@ -37,6 +54,8 @@
         alt="Tela de notebook com códigos!"
       />
     </main>
-    <footer></footer>
+    <footer>
+      <p>Desenvolvido por <a href="#">Igor</a></p>
+    </footer>
   </body>
 </html>
